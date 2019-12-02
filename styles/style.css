@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    border: 15px solid;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Score Board */
+.score-board {
+    display: inline-flex;
+    width: 40%;
+    justify-content: space-between;
+    border: solid 2px hsl(217, 16%, 45%);
+    border-radius: 10px;
+    margin: 3em 0 1em;
+    padding: 20px;
+}
+
+.logo img {
+    width: 10em;
+    height: 6em;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.score {
+    display: block;
+    color: hsl(229, 64%, 46%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 40px;
+}
+
+.score p {
+    margin-bottom: 1px;
+}
+
+.count p{
+    font-size: 3em;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    color: hsl(229, 25%, 31%);
+}
+
+/* Rock-Paper-Scissors */
+.triangle {
+    background-image: url("/images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    display: block;
+}
+
+.choose {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.paper img {
+    color: hsl(230, 89%, 65%);
+    box-shadow: 
+        inset 0 8px rgba(117, 111, 111, 0.404),    
+        0 8px 1px -1px hsl(230, 67%, 48%);
+}
+
+.scissors img{
+    color: hsl(40, 84%, 53%);
+    box-shadow: 
+        inset 0 8px rgba(117, 111, 111, 0.404),
+        0 8px 1px -1px hsl(39, 83%, 41%);
+}
+
+.rock img{
+    color: hsl(349, 70%, 56%);
+    box-shadow: 
+        inset 0 8px rgba(117, 111, 111, 0.404),
+        0 8px 1px -1px hsl(349, 82%, 43%);
+}
+
+.top-two button {
+    margin: 0 70px 80px;
+}
+
+/* Rules button */
+.rules {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+#myBtn {
+      color: white;
+      background: none;
+      border: solid 2px white;
+      border-radius: 10px;
+      padding: 10px 40px;
+      margin: 2em;
+      cursor: pointer;
+  }
+
+  /* Rules */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10em;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 15%;
+    padding: 0 40px 30px;
+    border-radius: 10px;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-items: center;
+}
+
+.modal-img img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+#close img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* Match board */
+.match-board {
+    display: none;
+}
+
+.match-flex {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: bold;
+    width: 50%;
+    color: white;
+    margin-top: 3em;
+}
+
+.your-pick, .house-pick {
+    font-size: 2em;
+}
+
+.your-pick-img, .house-pick-img {
+    margin-top: 2em;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: hsl(228, 42%, 18%);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.your-pick-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.house-pick-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.result {
+    padding-top: 8em;
+}
+
+.result p {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.result button {
+    background: white;
+    border-radius: 10px;
+    padding: 12px 40px;
+}
+
+.attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 2em;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .attribution a {
+    color: hsl(0, 55%, 81%);
+    text-decoration: none;
+  }
+
+  /* Hidden */
+.your-pick-img .rock {
+    display: none;
+}
+ 
+.your-pick-img .paper {
+    display: none;
+}
+
+.your-pick-img .scissors {
+    display: none;
+}
+
+.house-pick-img .rock {
+    display: none;
+}
+ 
+.house-pick-img .paper {
+    display: none;
+}
+
+.house-pick-img .scissors {
+    display: none;
+}

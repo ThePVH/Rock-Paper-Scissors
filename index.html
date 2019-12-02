@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="score-board">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="score">
+      <p>SCORE</p>
+      <div class="count">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PickOne Page -->
+  <div id="triangle" class="triangle">
+    <div class="choose">
+      <p>PICK ONE</p>
+    </div>
+    <div class="top-two">
+      <button name="paper" class="paper"><img src="images/icon-paper.svg" alt="Paper"></button>
+      <button name="scissors" class="scissors"><img src="images/icon-scissors.svg" alt="Scissors"></button>
+    </div>
+    <div class="bottom-one">
+      <button name="rock" class="rock"><img src="images/icon-rock.svg" alt="Rock"></button>
+    </div>
+  </div>
+
+  <!-- Match Board -->
+  <div id="match-board" class="match-board">
+    <div class="match-flex">
+      <div class="your-pick">
+        <p>YOU PICKED</p>
+        <div class="your-pick-img">
+          <button name="rock" class="rock" id="yourrock"><img src="images/icon-rock.svg" alt="Rock"></button>
+          <button name="paper" class="paper" id="yourpaper"><img src="images/icon-paper.svg" alt="Paper"></button>
+          <button name="scissors" class="scissors" id="yourscissors"><img src="images/icon-scissors.svg"
+              alt="Scissors"></button>
+        </div>
+      </div>
+      <div class="result">
+        <p id="result">DRAW</p>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+      <div class="house-pick">
+        <p>THE HOUSE PICKED</p>
+        <div class="house-pick-img">
+          <button name="rock" class="rock" id="hrock"><img src="images/icon-rock.svg" alt="Rock"></button>
+          <button name="paper" class="paper" id="hpaper"><img src="images/icon-paper.svg" alt="Paper"></button>
+          <button name="scissors" class="scissors" id="hscissors"><img src="images/icon-scissors.svg"
+              alt="Scissors"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <button id="myBtn">RULES</button>
+  </div>
+
+  <!-- Rules -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-head">
+        <p>RULES</p>
+        <button id="close"><img src="images/icon-close.svg" alt="close icon"></button>
+      </div>
+      <div class="modal-img">
+        <img src="images/image-rules.svg" alt="Rules">
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tomi</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
