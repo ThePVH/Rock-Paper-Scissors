@@ -286,6 +286,14 @@ img {
         font-size: 2em;
     }
 
+    .choose {
+        margin-bottom: 30px;
+    }
+
+    .choose p {
+        margin: 10px 0;
+    }
+
     .triangle {
         background-position: 50% 100%;
     }
@@ -301,7 +309,7 @@ img {
     }
 
     .top-two button {
-        margin: 0 auto 60px;
+        margin: 0 auto 30px;
     }
 
     .rules {
