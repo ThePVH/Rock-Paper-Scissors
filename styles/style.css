@@ -271,6 +271,7 @@ img {
 @media only screen and (max-width: 650px) {
     .score-board {
         width: 80%;
+        margin-top: 20px;
     }
 
     .logo img {
@@ -313,7 +314,7 @@ img {
     }
 
     .rules {
-        margin-top: 70px;
+        margin-top: 30px;
         position: static;
     }
 
