@@ -297,10 +297,11 @@ img {
 
     .top-two {
         display: flex;
+        width: 100%;
     }
 
     .top-two button {
-        margin: 0 40px 60px;
+        margin: 0 auto 60px;
     }
 
     .rules {
@@ -343,7 +344,7 @@ img {
         margin-left: 15px;
     }
 
-    
+
     .your-pick-img img {
         width: 40px;
         height: 40px;
