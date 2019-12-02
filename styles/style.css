@@ -207,7 +207,7 @@ img {
     height: 100px;
 }
 
-.result {
+.result, .result-mobile {
     padding-top: 8em;
 }
 
@@ -220,6 +220,7 @@ img {
     background: white;
     border-radius: 10px;
     padding: 12px 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .attribution {
@@ -238,6 +239,10 @@ img {
   }
 
   /* Hidden */
+.result-mobile {
+    display: none;
+}
+
 .your-pick-img .rock {
     display: none;
 }
@@ -261,3 +266,114 @@ img {
 .house-pick-img .scissors {
     display: none;
 }
+
+/* Mobile Version */
+@media only screen and (max-width: 650px) {
+    .score-board {
+        width: 80%;
+    }
+
+    .logo img {
+        width: 8em;
+        height: 5em;
+    }
+
+    .score {
+        padding: 0 30px;
+    }
+
+    .count p {
+        font-size: 2em;
+    }
+
+    .triangle {
+        background-position: 50% 100%;
+    }
+
+    .triangle img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .top-two {
+        display: flex;
+    }
+
+    .top-two button {
+        margin: 0 40px 60px;
+    }
+
+    .rules {
+        margin-top: 70px;
+        position: static;
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+
+    .result {
+        display: none;
+    }
+
+    .result-mobile {
+        display: block;
+    }
+
+    .match-board {
+        align-items: center;
+    }
+
+    .match-flex {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .your-pick, .house-pick {
+        font-size: 1.2em;
+    }
+    
+    .your-pick-img, .house-pick-img {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .your-pick-img {
+        margin-left: 15px;
+    }
+
+    
+    .your-pick-img img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .house-pick-img img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .result {
+        padding-top: 2em;
+    }
+
+    .result-mobile {
+        padding-top: 20px;
+    }
+    
+    .result-mobile p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: white;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: bold;
+    }
+    
+    .result-mobile button {
+        background: white;
+    border-radius: 10px;
+    padding: 12px 40px;
+    }
+    
+  }

@@ -4,6 +4,7 @@ let close = document.getElementById("close");
 let triangleBoard = document.getElementById("triangle");
 let matchBoard = document.getElementById("match-board");
 let pAgain = document.getElementById("play-again");
+let pAgainMobile = document.getElementById("play-again-mobile");
 
 btn.onclick = () => {
     modal.style.display = "block";
@@ -57,6 +58,13 @@ const game = () => {
                     houseChoice.style.display = "none";
                 }
 
+                pAgainMobile.onclick = () => {
+                    triangleBoard.style.display = "block";
+                    matchBoard.style.display = "none";
+                    yourChoice.style.display = "none";
+                    houseChoice.style.display = "none";
+                }
+
             });
         });
     };
@@ -71,10 +79,13 @@ const game = () => {
     const compareChoices = (yChoice, computerChoice) => {
 
         const winner = document.getElementById("result");
+        const winnerMobile = document.getElementById("result-mobile");
+
 
         //Check for draw
         if (yChoice === computerChoice) {
             winner.innerHTML = "DRAW";
+            winnerMobile.innerHTML = "DRAW";
             return;
         }
 
@@ -82,11 +93,13 @@ const game = () => {
         if (yChoice === 'rock') {
             if (computerChoice === 'scissors') {
                 winner.innerHTML = 'YOU WON';
+                winnerMobile.innerHTML = 'YOU WON';
                 pScore++;
                 updateScore();
                 return;
             } else {
                 winner.innerHTML = 'YOU LOST';
+                winnerMobile.innerHTML = 'YOU LOST';
                 pScore--;
                 updateScore();
                 return;
@@ -97,11 +110,13 @@ const game = () => {
         if (yChoice === 'paper') {
             if (computerChoice === 'scissors') {
                 winner.innerHTML = 'YOU LOST';
+                winnerMobile.innerHTML = 'YOU LOST';
                 pScore--;
                 updateScore();
                 return;
             } else {
                 winner.innerHTML = 'YOU WON';
+                winnerMobile.innerHTML = 'YOU WON';
                 pScore++;
                 updateScore();
                 return;
@@ -112,11 +127,13 @@ const game = () => {
         if (yChoice === 'scissors') {
             if (computerChoice === 'rock') {
                 winner.innerHTML = 'YOU LOST';
+                winnerMobile.innerHTML = 'YOU LOST';
                 pScore--;
                 updateScore();
                 return;
             } else {
                 winner.innerHTML = 'YOU WON';
+                winnerMobile.innerHTML = 'YOU WON';
                 pScore++;
                 updateScore();
                 return;
