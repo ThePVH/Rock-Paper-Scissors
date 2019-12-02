@@ -5,6 +5,7 @@ let triangleBoard = document.getElementById("triangle");
 let matchBoard = document.getElementById("match-board");
 let pAgain = document.getElementById("play-again");
 let pAgainMobile = document.getElementById("play-again-mobile");
+let resultMobile = document.getElementById("rm");
 
 btn.onclick = () => {
     modal.style.display = "block";
@@ -36,6 +37,7 @@ const game = () => {
                 //Change Board
                 triangleBoard.style.display = "none";
                 matchBoard.style.display = "block";
+                resultMobile.style.display = "block";
 
                 //Your Choice
                 const yourChoice = document.getElementById(`your${option.name}`);
@@ -56,6 +58,7 @@ const game = () => {
                     matchBoard.style.display = "none";
                     yourChoice.style.display = "none";
                     houseChoice.style.display = "none";
+                    resultMobile.style.display = "none";
                 }
 
                 pAgainMobile.onclick = () => {
@@ -63,6 +66,7 @@ const game = () => {
                     matchBoard.style.display = "none";
                     yourChoice.style.display = "none";
                     houseChoice.style.display = "none";
+                    resultMobile.style.display = "none";
                 }
 
             });

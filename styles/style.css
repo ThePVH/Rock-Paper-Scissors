@@ -317,8 +317,8 @@ img {
         display: none;
     }
 
-    .result-mobile {
-        display: block;
+    #rm {
+        display: none;
     }
 
     .match-board {
