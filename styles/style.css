@@ -337,6 +337,7 @@ img {
     .match-flex {
         width: 100%;
         justify-content: space-around;
+        margin-top: 0px;
     }
     
     .your-pick, .house-pick {

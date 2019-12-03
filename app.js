@@ -32,12 +32,18 @@ const game = () => {
 
         const computerOptions = ['rock', 'scissors', 'paper'];
 
+
+
         options.forEach((option) => {
             option.addEventListener('click', function () {
                 //Change Board
                 triangleBoard.style.display = "none";
                 matchBoard.style.display = "block";
-                resultMobile.style.display = "block";
+
+                if (window.matchMedia("(max-width: 600px)").matches) {
+                    resultMobile.style.display = "block";
+                }
+
 
                 //Your Choice
                 const yourChoice = document.getElementById(`your${option.name}`);
